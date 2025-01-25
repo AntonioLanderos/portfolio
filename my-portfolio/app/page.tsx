@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/ProjectsSection'
 import SkillsSection from './components/SkillsSection'
 import ContactSection from './components/ContactSection'
+import AboutMeSection from './components/AboutMeSection'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <HeroSection />
+        <AboutMeSection />
         <ProjectsSection />
         <SkillsSection />
         <ContactSection />
