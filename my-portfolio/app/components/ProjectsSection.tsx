@@ -41,18 +41,20 @@ export default function ProjectsSection() {
             onClick={() => window.open(project.link)}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
-            <h3 className="text-xl font-semibold mb-2 relative z-10">{project.title}</h3>
-            <p className="text-gray-300 relative z-10">{project.description}</p>
-            <div className="pt-8 relative w-full h-48 overflow-hidden rounded-lg">
-              {/* Wrapper div for the blur effect */}
-              <div className="absolute inset-0 backdrop-blur-sm group-hover:backdrop-blur-none transition-all duration-300">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill // This makes the image fill the container
-                  className="h-auto max-w-lg mx-auto"
-                />
-              </div>
+            {/* Image Container with Fixed Height */}
+            <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Text Content */}
+            <div className="flex flex-col flex-grow">
+              <h3 className="text-xl font-semibold mb-2 relative z-10">{project.title}</h3>
+              <p className="text-gray-300 relative z-10 flex-grow">{project.description}</p>
             </div>
           </motion.div>
         ))}
