@@ -12,9 +12,9 @@ const projects = [
   {
     id: 2,
     title: 'Project 2',
-    description: 'A React-based task organizer',
-    image: '/images/under-construction.png',
-    link: 'https://www.jimdo.com/blog/under-construction-page/',
+    description: 'A beginner cybersecurity toolset for penetration testing and ethical hacking',
+    image: '/images/XhadowTools.png',
+    link: 'https://github.com/AntonioLanderos/XhadowTools.git',
   },
   {
     id: 3,
